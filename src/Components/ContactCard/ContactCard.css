@@ -1,0 +1,120 @@
+.contact-container {
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #19272d;
+}
+
+.contact .profile-pic {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.last-conection {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding: 15px;
+    }
+    
+    .contact .profile-pic {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    .contact-name {
+        font-size: 18px;
+    }
+
+    .last-conection {
+        font-size: 14px;
+    }
+}
+
+/* 1024px */
+@media (min-width: 1024px) {
+    .contact .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-name {
+        font-size: 22px;
+    }
+
+    .last-conection {
+        font-size: 15px;
+    }
+}
+
+/* 1440px */
+
+@media (min-width: 1440px) {
+    .contact .profile-pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-name {
+        font-size: 25px;
+    }
+
+    .last-conection {
+        font-size: 20px;
+    }
+}
+
+/* 2000px */
+
+@media (min-width: 2000px) {
+    .contact .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-name {
+        font-size: 35px;
+    }
+
+    .last-conection {
+        font-size: 28px;
+    }
+}
