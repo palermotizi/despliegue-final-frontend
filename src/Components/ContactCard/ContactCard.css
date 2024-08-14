@@ -21,8 +21,8 @@
 }
 
 .contact .profile-pic {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     overflow: hidden;
     border-radius: 50%;
     margin-right: 10px;
@@ -40,12 +40,12 @@
 }
 
 .contact-name {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .last-conection {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 100;
 }
 
@@ -55,42 +55,25 @@
     }
     
     .contact .profile-pic {
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
         margin-right: 15px;
     }
 
     .contact-name {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .last-conection {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
 /* 1024px */
 @media (min-width: 1024px) {
     .contact .profile-pic {
-        width: 60px;
-        height: 60px;
-    }
-
-    .contact-name {
-        font-size: 22px;
-    }
-
-    .last-conection {
-        font-size: 15px;
-    }
-}
-
-/* 1440px */
-
-@media (min-width: 1440px) {
-    .contact .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     }
 
     .contact-name {
@@ -99,6 +82,23 @@
 
     .last-conection {
         font-size: 20px;
+    }
+}
+
+/* 1440px */
+
+@media (min-width: 1440px) {
+    .contact .profile-pic {
+        width: 75px;
+        height: 75px;
+    }
+
+    .contact-name {
+        font-size: 30px;
+    }
+
+    .last-conection {
+        font-size: 25px;
     }
 }
 
@@ -111,10 +111,10 @@
     }
 
     .contact-name {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .last-conection {
-        font-size: 28px;
+        font-size: 30px;
     }
 }
