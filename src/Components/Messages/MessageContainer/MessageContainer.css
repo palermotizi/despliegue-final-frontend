@@ -7,6 +7,7 @@
     flex-direction: column;
     padding: 10px;
     overflow-y: auto;
+    margin: 5px 0;
 }
 
 .message-container::-webkit-scrollbar {
@@ -48,6 +49,7 @@
 @media (min-width: 768px) {
     .message-container {
         padding: 15px;
+        margin: 10px 0;
     }
 
     .data {
@@ -74,6 +76,7 @@
 @media (min-width: 1024px) {
     .message-container {
         padding: 20px;
+        margin: 15px 0;
     }
 
     .data {
@@ -100,6 +103,7 @@
 @media (min-width: 1440px) {
     .message-container {
         padding: 23px;
+        margin: 20px 0;
     }
 
     .data {
@@ -122,6 +126,10 @@
 
 /* 2000px */
 @media (min-width: 2000px) {
+    .message-container {
+        padding: 28px;
+        margin: 25px 0;
+    }
 
     .data {
         margin: 15px 0;

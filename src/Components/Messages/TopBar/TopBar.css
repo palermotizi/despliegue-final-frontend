@@ -1,7 +1,7 @@
 .whatsapp .top-bar {
     display: flex;
     width: 100%;
-    height: 45px;
+    height: 55px;
     align-items: center;
     justify-content: space-between;
 }
@@ -20,8 +20,8 @@
 
 .whatsapp .top-bar .back-pic-name .contact-image {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 10px;
@@ -36,7 +36,7 @@
 .whatsapp .back-pic-name .name {
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 18px;
     color: #ffffff;
     justify-content: center;
     margin-left: 15px;
@@ -50,40 +50,18 @@
     display: flex;
     color: #ffffff;
     padding: 10px;
-    font-size: 15px;
-}
-
-.whatsapp .top-bar .contact-call {
-    display: flex;
-    align-items: center;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 /* 768px */
 @media (min-width: 768px) {
     .whatsapp .top-bar {
-        height: 55px;
+        height: 65px;
     }
 
     .whatsapp .back-pic-name .name {
-        font-size: 17px;
+        font-size: 19px;
         margin-left: 20px;
-    }
-
-    .whatsapp .top-bar .back-pic-name .contact-image {
-        width: 40px;
-        height: 40px;
-    }
-
-    .whatsapp .top-bar i {
-        font-size: 18px;
-    }
-}
-
-/* 1024px */
-@media (min-width: 1024px) {
-    .whatsapp .top-bar {
-        height: 65px;
     }
 
     .whatsapp .top-bar .back-pic-name .contact-image {
@@ -91,17 +69,13 @@
         height: 50px;
     }
 
-    .whatsapp .back-pic-name .name {
-        font-size: 20px;
-    }
-
     .whatsapp .top-bar i {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
-/*1440px */
-@media (min-width: 1440px) {
+/* 1024px */
+@media (min-width: 1024px) {
     .whatsapp .top-bar {
         height: 75px;
     }
@@ -116,12 +90,12 @@
     }
 
     .whatsapp .top-bar i {
-        font-size: 22px;
+        font-size: 25px;
     }
 }
 
-/* 2000px */
-@media (min-width: 2000px) {
+/*1440px */
+@media (min-width: 1440px) {
     .whatsapp .top-bar {
         height: 85px;
     }
@@ -132,10 +106,31 @@
     }
 
     .whatsapp .back-pic-name .name {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .whatsapp .top-bar i {
-        font-size: 24px;
+        font-size: 30px;
+    }
+}
+
+/* 2000px */
+@media (min-width: 2000px) {
+    .whatsapp .top-bar {
+        height: 100px;
+    }
+
+    .whatsapp .top-bar .back-pic-name .contact-image {
+        width: 65px;
+        height: 65px;
+    }
+
+    .whatsapp .back-pic-name .name {
+        font-size: 30px;
+    }
+
+    .whatsapp .top-bar i {
+        font-size: 40px;
+        padding: 15px;
     }
 }

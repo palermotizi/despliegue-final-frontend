@@ -4,8 +4,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 55px;
-    padding: 10px 2px;
+    height: 65px;
+    padding: 10px 7px;
 
 }
 
@@ -13,7 +13,7 @@
     display: flex;
     background-color: #101B20;
     color: #a2a0a0;
-    height: 50px;
+    height: 55px;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
@@ -31,7 +31,6 @@
     font-size: 14px;
     color: white;
     outline: transparent;
-    flex-grow: 1;
 }
 
 .low-bar .message-input button {
@@ -43,7 +42,7 @@
 .low-bar .message-input i {
     color: #a2a0a0;
     padding: 0 5px;
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
 }
 
@@ -91,7 +90,7 @@
 @media (min-width: 768px) {
     .low-bar {
         padding: 12px 4px;
-        height: 60px;
+        height: 75px;
     }
 
     .low-bar .message-input {
@@ -115,13 +114,19 @@
     .low-bar .form-options .send i {
         font-size: 16px;
     }
+
+    .low-bar .message-input .form-options button {
+        width: 30px;
+        height: 30px;   
+        margin: 0 5px;
+    }
 }
 
 /* 1024px */
 @media (min-width: 1024px) {
     .low-bar {
         padding: 12px 5px;
-        height: 65px;
+        height: 80px;
     }
 
     .low-bar .message-input {
@@ -145,6 +150,12 @@
     .low-bar .form-options .send i {
         font-size: 17px;
     }
+
+    .low-bar .message-input .form-options button {
+        width: 35px;
+        height: 35px;   
+        margin: 0 5px;
+    }
 }
 
 /* 1440px */
@@ -152,7 +163,7 @@
 @media (min-width: 1440px) {
     .low-bar {
         padding: 14px 7px;
-        height: 70px;
+        height: 90px;
     }
 
     .low-bar .message-input {
@@ -166,6 +177,12 @@
     .low-bar .message-input i {
         font-size: 21px;
     }
+
+    .low-bar .message-input .form-options button {
+        width: 40px;
+        height: 40px;   
+        margin: 0 5px;
+    }
 }
 
 /* 2000px */
@@ -173,7 +190,7 @@
 @media (min-width: 2000px) {
     .low-bar {
         padding: 15px 8px;
-        height: 75px;
+        height: 100px;
     }
 
     .low-bar .message-input {
@@ -181,10 +198,16 @@
     }
 
     .low-bar .message-input .message-field {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .low-bar .message-input i {
-        font-size: 22px;
+        font-size: 25px;
+    }
+
+    .low-bar .message-input .form-options button {
+        width: 50px;
+        height: 50px;   
+        margin: 0 5px;
     }
 }
