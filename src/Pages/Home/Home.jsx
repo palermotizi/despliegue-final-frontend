@@ -32,7 +32,6 @@ const Home = () => {
         <h1 className="contact-title">Contactos</h1>
 
         <button className="add-button" onClick={openModal}>
-          <p className="add-button-text">Nuevo contacto</p>
           <i className="bi bi-plus-lg"></i>
         </button>
 
@@ -41,7 +40,7 @@ const Home = () => {
             type="text"
             value={searchInput}
             onChange={handleSearchOnChange}
-            placeholder="Buscar Contactos"
+            placeholder="Buscar"
             className="search-input"
           />
 

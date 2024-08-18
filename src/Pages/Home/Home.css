@@ -1,4 +1,4 @@
-.home-whatsapp {
+/* .home-whatsapp {
     width: 100%;
     height: 100%;
     display: flex;
@@ -105,10 +105,10 @@
     display: none;
     font-size: 18px;
     padding: 5px;
-}
+} */
 
 /* 768px */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .home-whatsapp .home-top-bar {
         height: 70px;
         padding: 15px;
@@ -141,10 +141,10 @@
         padding: 0 15px;
         height: 40px;
     }
-}
+} */
 
 /* 1024px */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .home-whatsapp .home-top-bar {
         height: 80px;
         padding: 18px;
@@ -177,11 +177,11 @@
         padding: 0 18px;
         height: 45px;
     }
-}
+} */
 
 /* 1440px */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     .home-whatsapp .home-top-bar {
         height: 90px;
         padding: 25px;
@@ -213,11 +213,11 @@
         padding: 0 20px;
         height: 50px;
     }
-}
+} */
 
 /* 2000px */
 
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
     .home-whatsapp .home-top-bar {
         height: 100px;
         padding: 25px;
@@ -248,5 +248,290 @@
     .home-whatsapp .home-top-bar .add-button {
         padding: 0 25px;
         height: 55px;
+    }
+} */
+
+
+/*
+============================================ Codigo hecho en: vh - % - vw ===================================================
+*/
+
+.home-whatsapp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-whatsapp .home-top-bar {
+    background-color: #080e10c0;
+    width: 100%;
+    height: 10vh;
+    padding: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #192930;
+    position: relative;
+}
+
+.home-whatsapp .contact-list-container {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 2vh 2vw;
+    position: relative;
+}
+
+.contact-list-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.contact-list-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 3px solid #2a3031;
+}
+
+.home-whatsapp .home-top-bar .contact-title {
+    color: white;
+    font-size: 32px; 
+    font-weight: 300;
+}
+
+.home-whatsapp .home-top-bar button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    justify-content: center;
+}
+
+.home-whatsapp .home-top-bar .search-bar {
+    display: flex;
+    height: 6vh;
+    font-size: 3.5vw; 
+    align-items: center;
+    padding: 0 5px;
+    margin: 0 0 0 10px;
+    border: 1px solid #192930;
+    border-radius: 50px;
+    width: 60%; 
+    position: relative;
+}
+
+.home-whatsapp .home-top-bar .search-bar .search-input {
+    background-color: transparent;
+    padding: 3%;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: rgb(222, 222, 222);
+    font-size: 18px;
+    width: 85%;
+    height: 100%;
+}
+
+.home-whatsapp .home-top-bar .search-bar .search-button {
+    font-size: 20px;
+}
+
+.home-whatsapp .home-top-bar .search-bar .search-input::placeholder {
+    font-size: 20px;
+}
+.home-whatsapp .contact-list-container .no-contacts-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #81939b;
+    font-size: clamp(16px, 4vw, 24px);
+    padding: 5vh;
+}
+
+.home-whatsapp .home-top-bar .add-button {
+    position: fixed; 
+    bottom: 3%; 
+    right: 3%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #082e24;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    white-space: nowrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* 768px */
+@media (min-width: 768px) {
+    .home-whatsapp .home-top-bar {
+        height: 12vh; 
+    }
+
+    .home-whatsapp .home-top-bar .contact-title {
+        font-size: 32px; 
+    }
+
+    .home-whatsapp .home-top-bar .search-bar {
+        width: 65%; 
+        padding: 25px 0;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-button {
+        font-size: 2.5vw;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input {
+        font-size: 25px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input::placeholder {
+        font-size: 25px;
+    }
+
+    .home-whatsapp .home-top-bar button {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .home-whatsapp .home-top-bar .add-button {
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+    }
+
+    .home-whatsapp .contact-list-container .no-contacts-found {
+        font-size: clamp(25px, 3vw, 34px);
+    }
+}
+
+/* 1024px */
+@media (min-width: 1024px) {
+    .home-whatsapp .home-top-bar {
+        height: 14vh;
+    }
+
+    .home-whatsapp .home-top-bar .contact-title {
+        font-size: 40px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar {
+        width: 70%;
+        padding: 30px 0;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input {
+        font-size: 30px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input::placeholder {
+        font-size: 30px;
+    }
+
+    .home-whatsapp .home-top-bar button {
+        font-size: 35px;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .home-whatsapp .home-top-bar .add-button {
+        width: 65px;
+        height: 65px;
+        font-size: 38px;
+    }
+
+    .home-whatsapp .contact-list-container .no-contacts-found {
+        font-size: clamp(35px, 3vw, 44px);
+    }
+}
+
+
+/* 1440px */
+@media (min-width: 1440px) {
+    .home-whatsapp .home-top-bar {
+        height: 16vh;
+    }
+
+    .home-whatsapp .home-top-bar .contact-title {
+        font-size: 50px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar {
+        width: 70%;
+        padding: 35px 0;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input {
+        font-size: 35px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input::placeholder {
+        font-size: 35px;
+    }
+
+    .home-whatsapp .home-top-bar button {
+        font-size: 40px;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .home-whatsapp .home-top-bar .add-button {
+        width: 70px;
+        height: 70px;
+        font-size: 42px;
+    }
+
+    .home-whatsapp .contact-list-container .no-contacts-found {
+        font-size: clamp(45px, 3vw, 54px);
+    }
+}
+
+/* 2000px */
+@media (min-width: 2000px) {
+    .home-whatsapp .home-top-bar {
+        height: 17vh;
+    }
+
+    .home-whatsapp .home-top-bar .contact-title {
+        font-size: 70px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar {
+        padding: 50px 0;
+    }
+
+    
+    .home-whatsapp .home-top-bar .search-bar .search-input {
+        font-size: 40px;
+    }
+
+    .home-whatsapp .home-top-bar .search-bar .search-input::placeholder {
+        font-size: 50px;
+    }
+
+    .home-whatsapp .home-top-bar button {
+        font-size: 40px;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .home-whatsapp .home-top-bar .add-button {
+        width: 90px;
+        height: 90px;
+        font-size: 55px;
+    }
+
+    .home-whatsapp .contact-list-container .no-contacts-found {
+        font-size: clamp(55px, 3vw, 64px);
     }
 }
