@@ -1,4 +1,4 @@
-.low-bar {
+/* .low-bar {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,10 +83,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-
-/* 768px */
+/*
 @media (min-width: 768px) {
     .low-bar {
         padding: 12px 4px;
@@ -122,7 +121,6 @@
     }
 }
 
-/* 1024px */
 @media (min-width: 1024px) {
     .low-bar {
         padding: 12px 5px;
@@ -158,7 +156,6 @@
     }
 }
 
-/* 1440px */
 
 @media (min-width: 1440px) {
     .low-bar {
@@ -185,7 +182,6 @@
     }
 }
 
-/* 2000px */
 
 @media (min-width: 2000px) {
     .low-bar {
@@ -209,5 +205,214 @@
         width: 50px;
         height: 50px;   
         margin: 0 5px;
+    }
+}
+*/
+
+.low-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    padding: 1.5vh;
+}
+
+.low-bar .message-input {
+    display: flex;
+    background-color: #101B20;
+    color: #a2a0a0;
+    justify-content: space-between;
+    border-radius: 50px;
+    align-items: center;
+    height: 6vh;
+    padding: 5px;
+    position: relative;
+}
+
+.low-bar .message-input .emojis-message {
+    display: flex;
+    align-items: center;
+}
+
+.low-bar .message-input .message-field {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: clamp(14px, 4vw, 18px);
+    color: white;
+    outline: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.low-bar .message-input button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.low-bar .message-input i {
+    color: #a2a0a0;
+    padding: 0 1vw;
+    font-size: clamp(18px, 4vw, 24px);
+    align-items: center;
+}
+
+.low-bar .message-input .emojis-message .emojis {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 1vw;
+}
+
+.low-bar .message-input .form-options {
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.low-bar .message-input .form-options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.low-bar .form-options .send {
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(34, 184, 69);
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    width: 30px;
+    height: 30px;
+}
+
+.low-bar .form-options .send i {
+    color: black;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 768px */
+@media (min-width: 768px) {
+    .low-bar {
+        padding: 7.5vh 1vh;
+        height: 8.5vh;
+    }
+
+    .low-bar .message-input {
+        height: 6.5vh;
+    }
+
+    .low-bar .message-input .message-field {
+        font-size: clamp(19px, 2vw, 30px);
+    }
+
+    .low-bar .message-input i {
+        font-size: clamp(24px, 2vw, 30px);
+    }
+
+    .low-bar .message-input .form-options button {
+        width: 30px;
+        height: 30px;   
+        margin: 5px;
+    }
+
+    .low-bar .form-options .send i {
+        font-size: 18px;
+    }
+} 
+
+/* 1024px */
+@media (min-width: 1024px) {
+    .low-bar {
+        padding: 8vh 1vh;
+        height: 9vh;
+    }
+
+    .low-bar .message-input {
+        height: 7vh;
+    }
+
+    .low-bar .message-input .message-field {
+        font-size: clamp(20px, 2vw, 32px);
+    }
+
+    .low-bar .message-input i {
+        font-size: clamp(24px, 2vw, 34px);
+    }
+
+    .low-bar .message-input .form-options button {
+        width: 35px;
+        height: 35px;   
+        margin: 5px;
+    }
+
+    .low-bar .form-options .send i {
+        font-size: 18px;
+    }
+}
+
+/* 1440px */
+
+@media (min-width: 1440px) {
+    .low-bar {
+        padding: 8.5vh 1vh;
+        height: 10vh;
+    }
+
+    .low-bar .message-input {
+        height: 7.5vh;
+    }
+
+    .low-bar .message-input .message-field {
+        font-size: clamp(22px, 2vw, 35px);
+    }
+
+
+    .low-bar .message-input .form-options button {
+        width: 40px;
+        height: 40px;   
+    }
+
+    .low-bar .form-options .send i {
+        font-size: 23px;
+    }
+}
+
+/* 2000px */
+
+@media (min-width: 2000px) {
+    .low-bar {
+        padding: 8vh 1vh;
+        height: 11vh;
+    }
+
+    .low-bar .message-input {
+        height: 8vh;
+    }
+
+    .low-bar .message-input .message-field {
+        font-size: clamp(24px, 2vw, 38px);
+    }
+
+    .low-bar .message-input i {
+        font-size: 2vw;
+    }
+
+    .low-bar .message-input .form-options button {
+        width: 45px;
+        height: 45px;   
+        margin: 5px;
+    }
+
+    .low-bar .form-options .send i {
+        font-size: 25px;
     }
 }
