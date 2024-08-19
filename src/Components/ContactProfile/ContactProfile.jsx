@@ -51,16 +51,16 @@ const handleFavoriteClick = () => {
             </div>
 
             <div className='profile-options'>
-                <button onClick={handleFavoriteClick}>
+                <button className='profile-favorite' onClick={handleFavoriteClick}>
                     <i className={`bi ${isFavorite ? 'bi-heart-fill favorite' : 'bi-heart'}`}> 
                     </i>
                         {isFavorite ? ' Favoritos' : ' Añadir a favoritos'}
                 </button>
-                <button onClick={() => onDelete(contact.id)}>
+                <button className="delete-button" onClick={() => onDelete(contact.id)}>
                     <i className="bi bi-trash"> </i>
                     Eliminar
                 </button>
-                <button>
+                <button className='delete-button'>
                     <i className="bi bi-hand-thumbs-down"></i>
                     Reportar 
                 </button>

@@ -25,7 +25,7 @@
 
 .profile-content button i{
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .profile-content .profile-topbar {
@@ -70,6 +70,7 @@
     padding: 10px;
     font-weight: 100;
     margin-top: 40px;
+    font-size: 20px;
 }
 
 .profile-content .profile-options {
@@ -86,17 +87,17 @@
     display: flex;
     padding: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     align-items: center;
 }
 
 .profile-content .profile-options i {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     padding-right: 5px;
 }
 
-.profile-content .profile-options .bi-heart {
+.profile-content .profile-options .profile-favorite i {
     color: white;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -107,8 +108,33 @@
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+.profile-content .profile-options .profile-favorite:hover i {
+    transform: scale(1.4);
+    color: rgb(255, 51, 51);
+}
+
 .profile-content .profile-options .bi-heart.fill:hover {
     transform: scale(1.4);
+}
+
+
+.profile-content .profile-options .delete-button i {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile-content .profile-options .delete-button:hover i {
+    color: red;
+    transform: scale(1.4);
+}
+
+.profile-content .profile-options .delete-button i {
+    color: white;
+    transform: scale(1);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 
@@ -120,17 +146,28 @@
         height: 200px;
     }
 
-    .profile-content h3 {
+    .profile-content button i{
         font-size: 28px;
     }
 
+    .profile-content h3 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
     .profile-content .profile-icons i {
-        font-size: 18px;
+        font-size: 25px;
         margin-top: 30px;
     }
 
     .profile-content .profile-options button {
-        font-size: 20px;
+        font-size: 28px;
+    }
+
+    .profile-content .profile-options button i {
+        font-size: 28px;
+        padding-right: 12px;
+        margin-top: 5px;
     }
 }
 
@@ -141,17 +178,23 @@
         height: 230px;
     }
 
+    .profile-content button i{
+        font-size: 30px;
+    }
+
     .profile-content h3 {
-        font-size: 32px;
+        font-size: 45px;
+
     }
 
     .profile-content .profile-icons i {
-        font-size: 20px;
-        margin-top: 20px;
+        font-size: 28px;
+        margin-top: 30px;
     }
 
     .profile-content .profile-options button {
-        font-size: 22px;
+        font-size: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -162,17 +205,21 @@
         height: 250px;
     }
 
+    .profile-content button i{
+        font-size: 33px;
+    }
+
     .profile-content h3 {
-        font-size: 36px;
+        font-size: 50px;
     }
 
     .profile-content .profile-icons i {
-        font-size: 22px;
-        margin-top: 15px;
+        font-size: 29px;
+        margin-top: 35px;
     }
 
-    .profile-content .profile-options button {
-        font-size: 24px;
+    .profile-content .profile-options button i {
+        font-size: 30px;
     }
 }
 
@@ -183,18 +230,20 @@
         height: 280px;
     }
 
+    .profile-content button i{
+        font-size: 34px;
+    }
+
     .profile-content h3 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .profile-content .profile-icons i {
-        font-size: 24px;
-        margin-top: 10px;
+        font-size: 32px;
+        margin-top: 30px;
     }
 
-
-
     .profile-content .profile-options button {
-        font-size: 26px;
+        font-size: 34px;
     }
 }
