@@ -6,6 +6,4 @@ Con respecto al responsive, me costó porque no lo practicaba desde las clases d
 
 Con el resto de las cosas no es que me resultaron fáciles pero tengo los conocimientos más frescos y la mensajería la trabajamos entre todos entonces se hizo más liviano. Lo unico que me trabé un poco fue en el caso de useEffect que tuve que buscar info en internet porque no terminaba de entender como ponerlo en práctica.
 
-La idea del trabajo fue muy linda, me hubiese gustado hacer el slack pero no me daban los tiempos. 
-
-Gracias mati por hacer las clases llevaderas y divertidas, se aprendió mucho.
+La idea del trabajo fue muy linda, se pusieron todos los conocimientos en práctica y las clases fueron claras.
