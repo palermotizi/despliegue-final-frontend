@@ -15,3 +15,53 @@
     text-align: left;
     color: #e9e7e3;
 } 
+
+.date-status {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: end;
+}
+
+.date-status i {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .date-status {
+        font-size: 14px;
+    }
+    .date-status i {
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .date-status {
+        font-size: 16px;
+    }
+
+    .date-status i {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .date-status {
+        font-size: 18px;
+    }
+    .date-status i {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .date-status {
+        font-size: 20px;
+    }
+
+    .date-status i {
+        font-size: 35px;
+    }
+}

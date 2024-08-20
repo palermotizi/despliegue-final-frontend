@@ -31,6 +31,14 @@ const Detail = () => {
     }
   }
 
+  const getLastMessageDate = () => {
+    if (messages.length > 0) {
+      const lastMessage = messages[messages.length - 1]
+      return lastMessage.day
+    }
+    return ''
+  }
+
   if (!contact) {
     return <div>No se encontro el contacto</div>
   }
@@ -41,6 +49,9 @@ const Detail = () => {
         <div className="background">
           <img src="/background.jpg" alt="background" className='background-img' />
         </div>
+        <div className="last-message-date">
+        {getLastMessageDate()}
+      </div>
         <MessageContainer messages={messages} />
         <LowBar addMessage={addMessage} />
       </div>
