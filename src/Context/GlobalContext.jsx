@@ -26,12 +26,21 @@ export const GlobalProvider = ({ children }) => {
     const newContact = {
       ...contact,
       id: uuid(),
-      thumbnail: contact.thumbnail || '/default-avatar.jpg'
+      thumbnail: contact.thumbnail || '/default-avatar.jpg',
+      isFavorite: false,
     }
     const newContacts = [...contacts, newContact]
     setContacts(newContacts)
     localStorage.setItem('contacts', JSON.stringify(newContacts))
     navigate('/')
+  }
+
+  const handleToggleFavorite = (id) => {
+    const updatedContacts = contacts.map(contact => 
+      contact.id === id ? { ...contact, isFavorite: !contact.isFavorite } : contact
+    )
+    setContacts(updatedContacts)
+    localStorage.setItem('contacts', JSON.stringify(updatedContacts))
   }
 
   useEffect(() => {
@@ -45,7 +54,7 @@ export const GlobalProvider = ({ children }) => {
     contact.nombre && contact.nombre.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
-    <GlobalContext.Provider value={{ contacts: filteredContacts, setSearchTerm, handleDeleteContact, handleCreateContact }}>
+    <GlobalContext.Provider value={{ contacts: filteredContacts, setSearchTerm, handleDeleteContact, handleCreateContact, handleToggleFavorite }}>
       {children}
     </GlobalContext.Provider>
   )

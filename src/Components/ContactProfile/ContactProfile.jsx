@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import './ContactProfile.css'
-
-
-
 import { useNavigate } from 'react-router-dom'
-const ContactProfile = ({ contact, onDelete }) => {
+import { useGlobalContext } from '../../Context/GlobalContext'
 
+
+const ContactProfile = ({ contact }) => {
+    const { handleDeleteContact, handleToggleFavorite } = useGlobalContext()
     const navigate = useNavigate()
     const [isFavorite, setIsFavorite] = useState(false)
+    const [showConfirmation, setShowConfirmation] = useState(false)
+    const [actionType, setActionType] = useState('')
+    const [reportMessage, setReportMessage] = useState(false)
 
 
 const handleBackClick = () => {
@@ -15,8 +18,34 @@ const handleBackClick = () => {
 }
 
 const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite)
+    handleToggleFavorite(contact.id)
 }
+
+const handleDeleteClick = () => {
+    setActionType('eliminar')
+    setShowConfirmation(true)
+}
+
+const handleReportClick = () => {
+    setActionType('reportar')
+    setShowConfirmation(true)
+}
+
+const handleConfirm = () => {
+    if (actionType === 'eliminar') {
+        handleDeleteContact(contact.id)
+    } else if (actionType === 'reportar') {
+        setShowConfirmation(false)
+            setReportMessage(true)
+            setTimeout(() => setReportMessage(false), 3000)
+    }
+    setShowConfirmation(false)
+}
+
+const handleCancel = () => {
+    setShowConfirmation(false)
+}
+
 
 
   return (
@@ -52,19 +81,36 @@ const handleFavoriteClick = () => {
 
             <div className='profile-options'>
                 <button className='profile-favorite' onClick={handleFavoriteClick}>
-                    <i className={`bi ${isFavorite ? 'bi-heart-fill favorite' : 'bi-heart'}`}> 
+                    <i className={`bi ${contact.isFavorite ? 'bi-heart-fill favorite' : 'bi-heart'}`}> 
                     </i>
-                        {isFavorite ? ' Favoritos' : ' Añadir a favoritos'}
+                        {contact.isFavorite ? ' Favoritos' : ' Añadir a favoritos'}
                 </button>
-                <button className="delete-button" onClick={() => onDelete(contact.id)}>
+                <button className="delete-button" onClick={handleDeleteClick}>
                     <i className="bi bi-trash"> </i>
                     Eliminar
                 </button>
-                <button className='delete-button'>
+                <button className='delete-button' onClick={handleReportClick}>
                     <i className="bi bi-hand-thumbs-down"></i>
                     Reportar 
                 </button>
             </div>
+            {showConfirmation && (
+                <div className="confirmation-dialog-container">
+                    <div className="confirmation-dialog">
+                        <p>¿Estás seguro de que deseas {actionType} este contacto?</p>
+                        <div className="actions">
+                            <button onClick={handleConfirm}>Sí</button>
+                            <button onClick={handleCancel}>No</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {reportMessage && (
+                <div className="report-message">
+                    <p>Contacto reportado</p>
+                </div>
+            )}
         </div>
   )
 }

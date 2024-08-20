@@ -44,9 +44,9 @@
     color: #798085;
 }
 
-.last-message-date {
+/* .last-message-date {
     position: fixed;
-    top: 11%;
+    top: 10%;
     right: 50%; 
     background-color: #282a2b; 
     color: rgb(217, 217, 217);
@@ -55,7 +55,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     font-size: 16px; 
     z-index: 10; 
-  }
+  } */
 
 /* 768px */
 
@@ -83,9 +83,9 @@
         font-size: 12px;
     }
 
-    .last-message-date {
-        top: 13%;
-    }
+    /* .last-message-date {
+        top: 12%;
+    } */
 }
 
 /* 1024px */
@@ -114,9 +114,9 @@
         font-size: 14px;
     }
 
-    .last-message-date {
-        top: 15%;
-    }
+    /* .last-message-date {
+        top: 14%;
+    } */
 }
 
 /* 1440px */
@@ -143,10 +143,10 @@
     .date-status {
         font-size: 15px;
     }
-
+/* 
     .last-message-date {
-        top: 17%;
-    }
+        top: 15%;
+    } */
 }
 
 /* 2000px */
@@ -172,7 +172,7 @@
         font-size: 20px;
     }
 
-    .last-message-date {
+    /* .last-message-date {
         top: 19%;
-    }
+    } */
 }
